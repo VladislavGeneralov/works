@@ -116,21 +116,36 @@ body { padding-left: 13rem; padding-right: 13rem; }
 .card__title {
   flex: 1;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.2rem;
   padding: 0 0.9rem;
-  font-size: 0.9rem;
-  font-weight: 700;
   min-width: 0;
 }
-.card__title span {
+.card__title-text {
   display: block;
   width: 100%;
+  font-size: 0.9rem;
+  font-weight: 700;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.card__year {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 250;
+  color: var(--muted);
+}
 
 .block-heading { font-size: 2rem; margin: 2.5rem 0 0.25rem; text-align: center; }
+.block-year {
+  font-size: 0.85rem;
+  font-weight: 250;
+  color: var(--muted);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
 .block-subtitle {
   text-transform: uppercase;
   letter-spacing: 0.06em;
