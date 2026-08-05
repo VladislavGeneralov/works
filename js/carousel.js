@@ -14,11 +14,13 @@ document.addEventListener('DOMContentLoaded', function () {
       index = Math.max(0, Math.min(slides.length - 1, index));
       track.scrollTo({ left: track.clientWidth * index, behavior: 'smooth' });
     }
-    function updateDots() {
+    function updateControls() {
       var idx = currentIndex();
       dots.forEach(function (d, i) {
         d.classList.toggle('is-active', i === idx);
       });
+      prevBtn.disabled = idx <= 0;
+      nextBtn.disabled = idx >= slides.length - 1;
     }
 
     prevBtn.addEventListener('click', function () { goTo(currentIndex() - 1); });
@@ -27,10 +29,8 @@ document.addEventListener('DOMContentLoaded', function () {
       d.addEventListener('click', function () { goTo(i); });
     });
 
-    var scrollTimer;
-    track.addEventListener('scroll', function () {
-      clearTimeout(scrollTimer);
-      scrollTimer = setTimeout(updateDots, 80);
-    });
+    track.addEventListener('scroll', updateControls);
+
+    updateControls();
   });
 });
