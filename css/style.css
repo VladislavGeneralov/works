@@ -52,10 +52,20 @@ body { padding-left: 13rem; padding-right: 13rem; }
 .page { max-width: 900px; margin: 0 auto; padding: 0 1.5rem; }
 
 @media (max-width: 640px) {
-  body { padding-left: 9.5rem; }
-  .sidenav-top { left: 0.9rem; gap: 0.9rem; }
+  body { padding-left: 0; padding-right: 0; padding-top: 3.25rem; }
+  .sidenav-top {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem 1rem;
+    padding: 0.7rem 1rem;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+  }
   .sidenav-top a { font-size: 0.7rem; }
-  .sidenav-divider { left: 8rem; }
+  .sidenav-divider { display: none; }
 }
 
 .hero {
