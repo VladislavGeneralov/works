@@ -177,6 +177,9 @@ body { padding-left: 13rem; padding-right: 13rem; }
 }
 .block-text { color: var(--fg); margin: 1.5rem 0; }
 .block-text p { margin: 0 0 1em; }
+.block-text a { color: var(--fg); text-decoration: underline; font-size: 1.08em; }
+.block-text a:hover { color: var(--accent); }
+.block-text--center { text-align: center; }
 .block-image { margin: 1.5rem 0; }
 .block-image img {
   width: 100%;
@@ -259,6 +262,15 @@ body { padding-left: 13rem; padding-right: 13rem; }
 }
 .block-video iframe {
   position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;
+}
+.block-video--vertical {
+  padding-bottom: 0;
+  height: auto;
+  aspect-ratio: 9 / 16;
+  width: min(100%, calc(82vh * 9 / 16));
+  width: min(100%, calc(82dvh * 9 / 16));
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .sitefooter {
