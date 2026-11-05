@@ -12,17 +12,20 @@
 <meta property="og:image" content="https://works.ellectroniqa.com/images_projects/dialogus/b364817700e04e8f8075.jpg">
 <meta property="og:url" content="https://works.ellectroniqa.com/dialogus.html">
 <link rel="icon" href="favicon.ico">
-<link rel="stylesheet" href="https://static.tildacdn.info/css/fonts-tildasans.css">
+<link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/inter.css">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<nav class="sidenav-top">
-  <a href="/#hardware">Hardware</a>
-  <a href="/#software">Software</a>
-  <a href="/#performances">Performances</a>
-  <a href="https://ellectroniqa.com/" target="_blank" rel="noopener">Links</a>
-</nav>
-<div class="sidenav-divider"></div>
+<header class="sidenav">
+  <a class="sidenav__name" href="/">Main</a>
+  <nav class="sidenav__links" aria-label="Sections">
+    <a href="/#hardware" class="is-current" aria-current="true">Hardware</a>
+    <a href="/#software">Software</a>
+    <a href="/#performances">Performances</a>
+    <a href="https://ellectroniqa.com/" target="_blank" rel="noopener">Links</a>
+  </nav>
+</header>
 <main class="page">
 <div class="block-subtitle">VLADISLAV GENERALOV</div>
 <h1 class="block-heading">Διάλογος</h1>
@@ -31,6 +34,7 @@
 <div class="block-text"><p>Διάλογος is a sound sculpture wherein birch bark pattern turns into sound. Four operators are arguing about the received information. Each of them consists of an infrared sensor, a piece of program code and a speaker, generating squarewave signal. Observing the same log, operators receive different information from which a dispute is born. On the one hand, this dispute is about nothing, as we can observe the whole log. On the other hand, its own language, its own rules, its own culture are born around the log.</p></div>
 <div class="block-video"><iframe src="https://www.youtube-nocookie.com/embed/YhtYvVzS3AU" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
 <div class="block-image"><img src="images_projects/dialogus/0cdee93ebfe64c26805a.jpg" width="1440" height="801" alt="Διάλογος, photo 2" loading="lazy"></div>
+<nav class="worknav" aria-label="More works"><a class="worknav__prev" href="magnetone.html"><span class="worknav__dir">← previous</span><span class="worknav__title">MAGNETONE</span></a><a class="worknav__next" href="lightsoundsynth.html"><span class="worknav__dir">next →</span><span class="worknav__title">Light→Sound Synthesizer</span></a></nav>
 </main>
 <footer class="sitefooter">
   <div class="sitefooter__inner">
@@ -38,7 +42,7 @@
       <a href="https://hooletronica.bandcamp.com/" target="_blank" rel="noopener">bandcamp</a>
       <a href="https://soundcloud.com/hooletronica" target="_blank" rel="noopener">soundcloud</a>
       <a href="https://www.instagram.com/electronica.rar" target="_blank" rel="noopener">instagram</a>
-      <a href="mailto:ptntonesix@gmail.com">email</a>
+      <a href="mailto:kmineralov@gmail.com">email</a>
     </div>
   </div>
 </footer>

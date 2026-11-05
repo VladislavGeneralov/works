@@ -12,17 +12,20 @@
 <meta property="og:image" content="https://works.ellectroniqa.com/images_projects/quadquest/74cd159bb8714ff68529.jpg">
 <meta property="og:url" content="https://works.ellectroniqa.com/quadquest.html">
 <link rel="icon" href="favicon.ico">
-<link rel="stylesheet" href="https://static.tildacdn.info/css/fonts-tildasans.css">
+<link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/inter.css">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<nav class="sidenav-top">
-  <a href="/#hardware">Hardware</a>
-  <a href="/#software">Software</a>
-  <a href="/#performances">Performances</a>
-  <a href="https://ellectroniqa.com/" target="_blank" rel="noopener">Links</a>
-</nav>
-<div class="sidenav-divider"></div>
+<header class="sidenav">
+  <a class="sidenav__name" href="/">Main</a>
+  <nav class="sidenav__links" aria-label="Sections">
+    <a href="/#hardware">Hardware</a>
+    <a href="/#software" class="is-current" aria-current="true">Software</a>
+    <a href="/#performances">Performances</a>
+    <a href="https://ellectroniqa.com/" target="_blank" rel="noopener">Links</a>
+  </nav>
+</header>
 <main class="page">
 <div class="block-subtitle">VLADISLAV GENERALOV</div>
 <h1 class="block-heading">quadquest</h1>
@@ -36,7 +39,8 @@
 <div class="block-text"><p>quadquest was shown to visitors of one of the events from kultura team (Pavlodar).</p><p>Specially for this event a custom USB joystick was built.</p></div>
 <div class="block-image"><img src="images_projects/quadquest/61cec83f-4c38-449c-9.jpg" width="1280" height="1208" alt="quadquest, photo 5" loading="lazy"></div>
 <div class="block-image"><img src="images_projects/quadquest/85145d38-b8e0-4964-b.jpg" width="1125" height="805" alt="quadquest, photo 6" loading="lazy"></div>
-<div class="block-image"><img src="images_projects/quadquest/21r.png" width="561" height="642" alt="quadquest, photo 7" loading="lazy"></div>
+<div class="block-image"><img src="images_projects/quadquest/21r.jpg" width="561" height="642" alt="quadquest, photo 7" loading="lazy"></div>
+<nav class="worknav" aria-label="More works"><a class="worknav__prev worknav__section" href="/#hardware">← Hardware</a><a class="worknav__next" href="carpetgenerator.html"><span class="worknav__dir">next →</span><span class="worknav__title">Fractal Carpet Generator</span></a></nav>
 </main>
 <footer class="sitefooter">
   <div class="sitefooter__inner">
@@ -44,7 +48,7 @@
       <a href="https://hooletronica.bandcamp.com/" target="_blank" rel="noopener">bandcamp</a>
       <a href="https://soundcloud.com/hooletronica" target="_blank" rel="noopener">soundcloud</a>
       <a href="https://www.instagram.com/electronica.rar" target="_blank" rel="noopener">instagram</a>
-      <a href="mailto:ptntonesix@gmail.com">email</a>
+      <a href="mailto:kmineralov@gmail.com">email</a>
     </div>
   </div>
 </footer>

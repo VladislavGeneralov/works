@@ -12,17 +12,20 @@
 <meta property="og:image" content="https://works.ellectroniqa.com/images_projects/kladmineralovweb/klmnweb_cover.jpg">
 <meta property="og:url" content="https://works.ellectroniqa.com/kladmineralovweb.html">
 <link rel="icon" href="favicon.ico">
-<link rel="stylesheet" href="https://static.tildacdn.info/css/fonts-tildasans.css">
+<link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/inter.css">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<nav class="sidenav-top">
-  <a href="/#hardware">Hardware</a>
-  <a href="/#software">Software</a>
-  <a href="/#performances">Performances</a>
-  <a href="https://ellectroniqa.com/" target="_blank" rel="noopener">Links</a>
-</nav>
-<div class="sidenav-divider"></div>
+<header class="sidenav">
+  <a class="sidenav__name" href="/">Main</a>
+  <nav class="sidenav__links" aria-label="Sections">
+    <a href="/#hardware">Hardware</a>
+    <a href="/#software" class="is-current" aria-current="true">Software</a>
+    <a href="/#performances">Performances</a>
+    <a href="https://ellectroniqa.com/" target="_blank" rel="noopener">Links</a>
+  </nav>
+</header>
 <main class="page">
 <div class="block-subtitle">VLADISLAV GENERALOV</div>
 <h1 class="block-heading">klad mineralov (web)</h1>
@@ -31,6 +34,7 @@
 <div class="block-text"><p>Six years after creating <a href="kladmineralov.html">klad mineralov</a> I decided to make a digital version of it to play funny sequences straight from my phone browser.</p><p>You can place minerals anywhere on a spinning disc and they will sound each time they pass the playhead. There is no grid, so the stones can lie wherever you like, but you can still turn on quantization to 16 slots. Or even place the stones automatically, dividing the circle into 1 to 16 equal parts to create Euclidean rhythms.</p><p>Each of the 22 minerals carries its own sample, which you can re-record. Samples can be trimmed, reversed and pitched.</p><p>Change the tempo and spin direction, add reverb, have fun!</p></div>
 <div class="block-text block-text--center"><p><a href="https://ellectroniqa.com/klmn/" target="_blank" rel="noopener">play in web</a></p></div>
 <div class="block-video block-video--vertical"><iframe src="https://www.youtube-nocookie.com/embed/B6UwHWnkALw" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+<nav class="worknav" aria-label="More works"><a class="worknav__prev" href="scdj.html"><span class="worknav__dir">← previous</span><span class="worknav__title">SCDJ</span></a><a class="worknav__next worknav__section" href="/#performances">Performances →</a></nav>
 </main>
 <footer class="sitefooter">
   <div class="sitefooter__inner">
@@ -38,7 +42,7 @@
       <a href="https://hooletronica.bandcamp.com/" target="_blank" rel="noopener">bandcamp</a>
       <a href="https://soundcloud.com/hooletronica" target="_blank" rel="noopener">soundcloud</a>
       <a href="https://www.instagram.com/electronica.rar" target="_blank" rel="noopener">instagram</a>
-      <a href="mailto:ptntonesix@gmail.com">email</a>
+      <a href="mailto:kmineralov@gmail.com">email</a>
     </div>
   </div>
 </footer>

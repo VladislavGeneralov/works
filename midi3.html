@@ -12,17 +12,20 @@
 <meta property="og:image" content="https://works.ellectroniqa.com/images_projects/midi3/888986b7-ddf6-4d2e-a.jpg">
 <meta property="og:url" content="https://works.ellectroniqa.com/midi3.html">
 <link rel="icon" href="favicon.ico">
-<link rel="stylesheet" href="https://static.tildacdn.info/css/fonts-tildasans.css">
+<link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/inter.css">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<nav class="sidenav-top">
-  <a href="/#hardware">Hardware</a>
-  <a href="/#software">Software</a>
-  <a href="/#performances">Performances</a>
-  <a href="https://ellectroniqa.com/" target="_blank" rel="noopener">Links</a>
-</nav>
-<div class="sidenav-divider"></div>
+<header class="sidenav">
+  <a class="sidenav__name" href="/">Main</a>
+  <nav class="sidenav__links" aria-label="Sections">
+    <a href="/#hardware" class="is-current" aria-current="true">Hardware</a>
+    <a href="/#software">Software</a>
+    <a href="/#performances">Performances</a>
+    <a href="https://ellectroniqa.com/" target="_blank" rel="noopener">Links</a>
+  </nav>
+</header>
 <main class="page">
 <div class="block-subtitle">VLADISLAV GENERALOV</div>
 <h1 class="block-heading">MIDI controller III</h1>
@@ -31,6 +34,7 @@
 <div class="block-text"><p>This is the third generation of my custom MIDI controller built for performances and home experiments.</p><p>This version includes 8 toggle switches, 8 knobs and two input sockets for connecting external devices: first one is a mono-jack for receiving CV signals, another one is a stereo-jack (with 5V on one of the pins) for receiving signals from active analog sensors.</p></div>
 <div class="block-text"><p>I will add some videos about connecting light sensor and vape-controller(!!!) to this MIDI controller soon!</p></div>
 <div class="block-image"><img src="images_projects/midi3/7befd42f-32ed-43c1-8.jpg" width="1280" height="1280" alt="MIDI controller III, photo 2" loading="lazy"></div>
+<nav class="worknav" aria-label="More works"><a class="worknav__prev" href="dualmodulator.html"><span class="worknav__dir">← previous</span><span class="worknav__title">Dual Delay / Frequency Modulator</span></a><a class="worknav__next worknav__section" href="/#software">Software →</a></nav>
 </main>
 <footer class="sitefooter">
   <div class="sitefooter__inner">
@@ -38,7 +42,7 @@
       <a href="https://hooletronica.bandcamp.com/" target="_blank" rel="noopener">bandcamp</a>
       <a href="https://soundcloud.com/hooletronica" target="_blank" rel="noopener">soundcloud</a>
       <a href="https://www.instagram.com/electronica.rar" target="_blank" rel="noopener">instagram</a>
-      <a href="mailto:ptntonesix@gmail.com">email</a>
+      <a href="mailto:kmineralov@gmail.com">email</a>
     </div>
   </div>
 </footer>
